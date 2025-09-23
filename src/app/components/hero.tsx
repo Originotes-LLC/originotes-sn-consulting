@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
 import { UsedBy } from "./used-by";
-import casualOffice from "@/images/casual_office.png";
+import woman from "@/images/woman.jpg";
 
 export function Hero() {
   return (
@@ -34,11 +34,11 @@ export function Hero() {
                 <UsedBy />
               </div>
             </div>
-            <figure className="mt-12 px-2.5">
+            <figure className="mt-6 lg:mt-12 px-4">
               <Image
-                className="rounded-t-3xl object-cover w-full h-auto max-h-[52rem]"
+                className="rounded-t-3xl object-cover w-full h-auto max-h-[] lg:max-h-[43rem]"
                 alt="Man in office thinking deeply about the ultimate custom servicenow build solution for his client"
-                src={casualOffice}
+                src={woman}
               />
             </figure>
             <figcaption className="sr-only">
